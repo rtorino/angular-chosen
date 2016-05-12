@@ -39,7 +39,7 @@
         link: function(scope, element, attr, ngModel) {
           var chosen, empty, initOrUpdate, match, options, origRender, startLoading, stopLoading, updateMessage, valuesExpr, viewWatch;
           scope.disabledValuesHistory = scope.disabledValuesHistory ? scope.disabledValuesHistory : [];
-          element = $(element);
+          // element = $(element);
           element.addClass('localytics-chosen');
           options = scope.$eval(attr.chosen) || {};
           angular.forEach(attr, function(value, key) {
